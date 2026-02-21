@@ -18,8 +18,8 @@ const Login = () => {
     const from = location.state?.from?.pathname || "/";
 
     const inputStyle =
-        "w-full px-5 py-3 border border-orange-400 text-orange-500 bg-gray-800 " +
-        "placeholder-orange-300 text-lg rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500";
+        "w-full px-5 py-3 border border-green-600 text-green-600 bg-gray-50 " +
+        "placeholder-green-600 text-lg rounded-md focus:outline-none focus:ring-2 focus:ring-green-600";
 
     const handleLogin = async (e) => {
         e.preventDefault();
@@ -59,8 +59,8 @@ const Login = () => {
     };
 
     return (
-        <div className="min-h-screen bg-gray-300 flex items-center justify-center px-4 py-8">
-            <div className="bg-gray-800 p-8 sm:p-10 rounded-2xl shadow-xl w-full max-w-5xl text-orange-400">
+        <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4 py-8">
+            <div className="bg-white p-8 sm:p-10 rounded-2xl shadow-xl w-full max-w-5xl text-green-600">
                 <h2 className="text-3xl font-bold text-center mb-10">Sign in to your account</h2>
                 <div className="flex flex-col md:flex-row gap-10 items-center">
                     <div className="w-full md:w-1/2">
@@ -70,7 +70,7 @@ const Login = () => {
                     <form onSubmit={handleLogin} className="w-full md:w-1/2 space-y-6">
                         {/* Email */}
                         <div>
-                            <label className="block text-lg mb-2 text-orange-300">Email</label>
+                            <label className="block text-lg mb-2 text-green-600">Email</label>
                             <input
                                 type="email"
                                 name="email"
@@ -84,7 +84,7 @@ const Login = () => {
 
                         {/* Password */}
                         <div>
-                            <label className="block text-lg mb-2 text-orange-300">Password</label>
+                            <label className="block text-lg mb-2 text-green-600">Password</label>
                             <div className="relative">
                                 <input
                                     type={showPassword ? "text" : "password"}
@@ -94,7 +94,7 @@ const Login = () => {
                                     required
                                 />
                                 <div
-                                    className="absolute right-4 top-1/2 transform -translate-y-1/2 cursor-pointer text-orange-400"
+                                    className="absolute right-4 top-1/2 transform -translate-y-1/2 cursor-pointer text-green-600"
                                     onClick={() => setShowPassword(!showPassword)}
                                 >
                                     {showPassword ? <FaEyeSlash /> : <FaEye />}
@@ -104,7 +104,7 @@ const Login = () => {
 
                         {/* Forgot Password */}
                         <div className="text-right">
-                            <h1 className="text-sm text-orange-300 hover:underline">
+                            <h1 className="text-sm text-green-600 hover:underline">
                                 Forgot your password?
                             </h1>
                         </div>
@@ -113,8 +113,8 @@ const Login = () => {
                         <button
                             type="submit"
                             className={`w-full py-6 rounded-md text-lg font-medium btn text-white ${loading
-                                ? "bg-orange-300 cursor-not-allowed"
-                                : "bg-orange-500 hover:bg-orange-600 transition-colors"
+                                ? "bg-green-600 cursor-not-allowed"
+                                : "bg-green-600 hover:bg-orange-600 transition-colors"
                                 }`}
                             disabled={loading}
                         >
@@ -123,9 +123,9 @@ const Login = () => {
 
                         {/* Divider */}
                         <div className="flex items-center gap-4">
-                            <hr className="flex-grow border-orange-300" />
-                            <span className="text-orange-300 text-sm">or</span>
-                            <hr className="flex-grow border-orange-300" />
+                            <hr className="flex-grow border-green-600" />
+                            <span className="text-green-600 text-sm">or</span>
+                            <hr className="flex-grow border-green-600" />
                         </div>
 
                         {/* Google Login */}
@@ -133,7 +133,7 @@ const Login = () => {
                             <button
                                 type="button"
                                 onClick={handleGoogleLogin}
-                                className="flex items-center gap-2 bg-white border border-orange-300 px-5 py-6 rounded-md shadow-md hover:shadow-lg transition-shadow text-lg w-full text-black font-semibold btn "
+                                className="flex items-center gap-2 bg-white border border-green-600 px-5 py-6 rounded-md shadow-md hover:shadow-lg transition-shadow text-lg w-full text-black font-semibold btn "
                                 disabled={loading}
                             >
                                 <FcGoogle className="text-2xl" />
@@ -144,9 +144,9 @@ const Login = () => {
                 </div>
 
                 {/* Signup Link */}
-                <p className="text-center mt-8 text-sm text-orange-300">
+                <p className="text-center mt-8 text-sm text-green-600">
                     Don’t have an account?{" "}
-                    <Link to="/register" className="text-orange-500 font-semibold hover:underline">
+                    <Link to="/register" className="text-green-600 font-semibold hover:underline">
                         Register Now!
                     </Link>
                 </p>

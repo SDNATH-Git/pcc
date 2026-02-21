@@ -25,8 +25,8 @@ const Register = () => {
 
     const inputStyle =
         "w-full px-6 py-4 border text-lg rounded-md focus:outline-none " +
-        "focus:ring-2 text-orange-500 border-orange-400 focus:ring-orange-600 " +
-        "bg-gray-800 placeholder-orange-300";
+        "focus:ring-2 text-green-600 border-green-600 focus:ring-green-600 " +
+        "bg-gray-50 placeholder-green-600";
 
     const validatePassword = (password) => {
         const hasUppercase = /[A-Z]/.test(password);
@@ -98,9 +98,9 @@ const Register = () => {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-300 px-4 p-6">
-            <div className="bg-gray-800 p-6 sm:p-10 rounded-2xl shadow-lg w-full max-w-6xl text-orange-500">
-                <h2 className="text-4xl font-bold text-center mb-10 text-orange-400">
+        <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4 p-6">
+            <div className="bg-white p-6 sm:p-10 rounded-2xl shadow-lg w-full max-w-6xl text-green-600">
+                <h2 className="text-4xl font-bold text-center mb-10 text-green-600">
                     Create a New Account
                 </h2>
                 <div className="flex flex-col md:flex-row items-center gap-10">
@@ -110,26 +110,26 @@ const Register = () => {
 
                     <form onSubmit={handleRegister} className="w-full md:w-1/2 space-y-4">
                         <div>
-                            <label className="block mb-2 text-lg text-orange-400">Username</label>
+                            <label className="block mb-2 text-lg text-green-600">Username</label>
                             <input type="text" name="username" placeholder="Enter your username" className={inputStyle} required />
                         </div>
                         <div>
-                            <label className="block mb-2 text-lg text-orange-400">Email</label>
+                            <label className="block mb-2 text-lg text-green-600">Email</label>
                             <input type="email" name="email" placeholder="Enter your email" className={inputStyle} required />
                         </div>
                         <div>
-                            <label className="block mb-2 text-lg text-orange-400">
+                            <label className="block mb-2 text-lg text-green-600">
                                 <div className="flex items-center gap-2">
                                     <span>Photo URL</span>
                                     <Link to="/what-is-photoURL">
-                                        <MdHelpCenter size={20} className="text-orange-400" />
+                                        <MdHelpCenter size={20} className="text-green-600" />
                                     </Link>
                                 </div>
                             </label>
                             <input type="text" name="photoURL" placeholder="Enter photo URL" className={inputStyle} />
                         </div>
                         <div className="relative">
-                            <label className="block mb-2 text-lg text-orange-400">Password</label>
+                            <label className="block mb-2 text-lg text-green-600">Password</label>
                             <input
                                 type={showPassword ? "text" : "password"}
                                 name="password"
@@ -138,14 +138,14 @@ const Register = () => {
                                 required
                             />
                             <div
-                                className="absolute right-5 top-[60px] text-orange-400 cursor-pointer"
+                                className="absolute right-5 top-[60px] text-green-600 cursor-pointer"
                                 onClick={() => setShowPassword(!showPassword)}
                             >
                                 {showPassword ? <FaEyeSlash /> : <FaEye />}
                             </div>
                         </div>
                         <div className="relative">
-                            <label className="block mb-2 text-lg text-orange-400">Confirm Password</label>
+                            <label className="block mb-2 text-lg text-green-600">Confirm Password</label>
                             <input
                                 type={showConfirmPassword ? "text" : "password"}
                                 name="confirmPassword"
@@ -154,7 +154,7 @@ const Register = () => {
                                 required
                             />
                             <div
-                                className="absolute right-5 top-[60px] text-orange-400 cursor-pointer"
+                                className="absolute right-5 top-[60px] text-green-600 cursor-pointer"
                                 onClick={() => setShowConfirmPassword(!showConfirmPassword)}
                             >
                                 {showConfirmPassword ? <FaEyeSlash /> : <FaEye />}
@@ -163,23 +163,23 @@ const Register = () => {
                         <button
                             type="submit"
                             disabled={loading}
-                            className={`w-full py-4 rounded-md text-xl font-semibold transition-colors text-white ${loading ? " bg-orange-300 cursor-not-allowed" : " btn py-6 bg-orange-500 hover:bg-orange-600"
+                            className={`w-full py-4 rounded-md text-xl font-semibold transition-colors text-white ${loading ? " bg-green-600 cursor-not-allowed" : " btn py-6 bg-green-600 hover:bg-green-600"
                                 }`}
                         >
                             Sign Up
                         </button>
 
                         <div className="flex items-center gap-4 mt-2">
-                            <hr className="flex-grow border-t border-orange-300" />
-                            <p className="text-orange-300 text-sm">or</p>
-                            <hr className="flex-grow border-t border-orange-300" />
+                            <hr className="flex-grow border-t border-green-600" />
+                            <p className="text-green-600 text-sm">or</p>
+                            <hr className="flex-grow border-t border-green-600" />
                         </div>
 
                         <div className="mt-4 flex items-center justify-center">
                             <button
                                 type="button"
                                 onClick={handleGoogleLogin}
-                                className="flex items-center gap-2 bg-white border border-orange-300 px-5 py-6 rounded-md shadow-md hover:shadow-lg transition-shadow text-lg w-full text-black btn  font-semibold"
+                                className="flex items-center gap-2 bg-white border border-green-600 px-5 py-6 rounded-md shadow-md hover:shadow-lg transition-shadow text-lg w-full text-black btn  font-semibold"
                                 disabled={loading}
                             >
                                 <FcGoogle className="text-2xl" />
@@ -189,9 +189,9 @@ const Register = () => {
                     </form>
                 </div>
 
-                <p className="text-sm text-center text-orange-300 mt-6">
+                <p className="text-sm text-center text-green-600 mt-6">
                     Already have an account?{" "}
-                    <Link to="/login" className="text-orange-500 font-semibold hover:underline">
+                    <Link to="/login" className="text-green-600 font-semibold hover:underline">
                         Login
                     </Link>
                 </p>

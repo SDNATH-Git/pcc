@@ -74,7 +74,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Desktop Nav */}
-                <nav className="hidden md:flex space-x-6 text-base">{renderNavLinks()}</nav>
+                {/* <nav className="hidden md:flex space-x-6 text-base">{renderNavLinks()}</nav> */}
 
                 {/* Right Actions */}
                 <div className="hidden md:flex items-center space-x-4 relative">
@@ -87,7 +87,7 @@ const Navbar = () => {
                                 className="w-10 h-10 rounded-full cursor-pointer border-2 border-violet-600"
                             />
                             {isDropdownOpen && (
-                                <div className="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded z-20 p-4 text-gray-800">
+                                <div className="absolute right-0 mt-2 w-48 bg-gray-50 shadow-lg rounded z-20 p-4 text-gray-800">
                                     <div className="text-sm mb-2 font-medium">{user.displayName}</div>
                                     <button
                                         onClick={handleLogout}
@@ -125,10 +125,10 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             {isMenuOpen && (
-                <div className="md:hidden bg-white px-4 pb-4 space-y-2">
-                    <div className="mt-3 flex flex-col space-y-2 text-base">
+                <div className="md:hidden bg-gray-50 px-4 pb-4 space-y-2">
+                    {/* <div className="mt-3 flex flex-col space-y-2 text-base">
                         {renderNavLinks(() => setIsMenuOpen(false))}
-                    </div>
+                    </div> */}
                     <div className="mt-4 space-y-2">
                         {user ? (
                             <div className="flex flex-col items-start gap-2 mt-4">
@@ -149,7 +149,7 @@ const Navbar = () => {
                                         handleLogout();
                                         setIsMenuOpen(false);
                                     }}
-                                    className="py-2 px-4 bg-orange-600 text-white rounded relative overflow-hidden hover:bg-orange-700 transition btn"
+                                    className="py-2 px-4 w-full bg-orange-600 text-white rounded relative overflow-hidden hover:bg-orange-700 transition btn"
                                 >
                                     Logout
                                     <span className="absolute bottom-0 left-0 w-0 h-1 bg-yellow-400 transition-all duration-300 hover:w-full"></span>
