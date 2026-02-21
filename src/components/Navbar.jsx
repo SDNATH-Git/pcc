@@ -70,7 +70,9 @@ const Navbar = () => {
             <div className="container mx-auto py-3 px-5 md:px-14  flex items-center justify-between ">
                 {/* Logo */}
                 <div className="flex items-center ">
-                    <h1 className="text-3xl font-extrabold">Bangladesh 2.0</h1>
+                    <h1 className="text-3xl font-extrabold  ">Bangladesh 2.0</h1>
+
+
                 </div>
 
                 {/* Desktop Nav */}

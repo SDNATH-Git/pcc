@@ -53,7 +53,7 @@ export default function App() {
             </section >
 
             {/* Pillars */}
-            < section className="py-6 mt-5" >
+            < section className="py-6 mt-5 md:mt-8" >
                 <h2 className="text-2xl md:text-3xl font-extrabold mb-4">Pillars of "Bangladesh 2.0"</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -70,7 +70,7 @@ export default function App() {
 
 
             {/* <!-- section The Vision of Future --> */}
-            <section className='py-6'>
+            <section className='py-6 md:mt-8'>
                 <h1 className='text-2xl md:text-3xl font-extrabold py-2'>The Vision of Future</h1>
                 <p class="font-normal pb-3">Bangladesh 2.0 aims to redefine the nation’s trajectory by embracing cutting-edge
                     technology, promoting inclusive growth, and ensuring sustainability. With initiatives in renewable energy digital transformation, and robus infrastructure, the country is set to become a global model of development.</p>
@@ -126,7 +126,7 @@ export default function App() {
 
 
             {/* Opinion */}
-            < section className="my-8 md:my-14" >
+            < section className="my-8 md:my-14 pt-5 md:pt-8" >
                 <h2 className="text-2xl md:text-3xl font-extrabold mb-4">Your Opinion Matters</h2>
                 <div className="bg-white rounded-xl shadow p-6 border-t-6 border-green-500 ">
                     <div className='flex justify-between border border-gray-300  p-4 bg-green-100'>
@@ -145,7 +145,7 @@ export default function App() {
 
 
             {/* News */}
-            <div className='py-5'>
+            <div className='py-5 pt-5 md:pt-8'>
                 <h2 className="text-2xl md:text-3xl font-extrabold">Recent News</h2>
                 <h2 className=" py-3">Bangladesh 2.0 aims to redefine the nation’s trajectory by embracing cutting-edge technology, promoting inclusive growth, and ensuring sustainability. With initiatives in renewable energy, digital transformation, and robust infrastructure, the country is set to become a global model of development.</h2>
             </div>
