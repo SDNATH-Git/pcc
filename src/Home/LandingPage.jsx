@@ -63,15 +63,43 @@ export default function App() {
                 </div>
             </section >
 
-            {/* Vision */}
-            < section className="max-w-7xl mx-auto p-6" >
-                <h2 className="text-xl font-bold mb-4">The Vision of Future</h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="bg-blue-100 p-5 rounded-xl">Digital Transformation</div>
-                    <div className="bg-green-100 p-5 rounded-xl">Green Energy</div>
-                    <div className="bg-yellow-100 p-5 rounded-xl">Modern Infrastructure</div>
+
+
+            {/* <!-- section The Vision of Future --> */}
+            <section className='py-6'>
+                <h1 className='text-3xl font-extrabold py-2'>The Vision of Future</h1>
+                <p class="font-normal pb-3">Bangladesh 2.0 aims to redefine the nation’s trajectory by embracing cutting-edge
+                    technology, promoting inclusive growth, and ensuring sustainability. With initiatives in renewable energy digital transformation, and robus infrastructure, the country is set to become a global model of development.</p>
+
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5'>
+
+                    <div className='bg-blue-100 p-5 rounded-xl hover:border-t-6 hover:border-blue-500 '>
+                        <div className="text-3xl mb-2"> <img src={card} alt="Card Icon" /> </div>
+                        <h3 className='text-xl font-bold'>Digital Transformation</h3>
+                        <p className="font-medium text-gray-500 py-1">Creating a nationwide digital ecosystem to enhance connectivity and to services for all citizens.</p>
+                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-2 rounded">Learn More</button>
+                    </div>
+                    <div className='bg-green-100 p-5 rounded-xl hover:border-t-6 hover:border-green-500'>
+                        <div className="text-3xl mb-2"> <img src={card} alt="Card Icon" /> </div>
+                        <h3 className='text-xl  font-bold'>Green Energy</h3>
+                        <p class="font-medium text-gray-500 py-1">Investments in solar and wind energy to ensure a sustainable and eco-friendly
+                            sustainability future.</p>
+                        <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 mt-2 rounded">Learn More</button>
+                    </div>
+                    <div className='bg-yellow-100 p-5 rounded-xl hover:border-t-6 hover:border-yellow-400'>
+                        <div className="text-3xl mb-2"> <img src={card} alt="Card Icon" /> </div>
+                        <h3 className='text-xl font-bold'>Modern Infrastructure</h3>
+                        <p class="font-medium text-gray-500 py-1">Building state-of-the-art infrastructure to support economic growth and global
+                            competitiveness.
+                        </p>
+                        <button className="bg-yellow-400 hover:bg-yellow-700 text-white font-bold py-2 px-4 mt-2 rounded">Learn More</button>
+                    </div>
                 </div>
-            </section >
+
+            </section>
+
+
+
 
             {/* Opinion */}
             < section className="max-w-7xl mx-auto p-6" >
