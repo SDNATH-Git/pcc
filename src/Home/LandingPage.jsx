@@ -123,17 +123,26 @@ export default function App() {
 
 
             {/* Opinion */}
-            < section className="max-w-7xl mx-auto p-6" >
-                <h2 className="text-xl font-bold mb-4">Your Opinion Matters</h2>
-                <div className="bg-white rounded-xl shadow p-4">
+            < section className="my-8 md:my-14" >
+                <h2 className="text-2xl md:text-3xl font-extrabold mb-4">Your Opinion Matters</h2>
+                <div className="bg-white rounded-xl shadow p-6 border-t-6 border-green-500 ">
+                    <div className='flex justify-between border border-gray-300  p-4 bg-green-100'>
+                        <p className='text-xl font-extrabold'>Question</p>
+                        <p className='text-xl font-extrabold'>Select Your Option</p>
+                    </div>
                     {[1, 2, 3].map(i => (
-                        <div key={i} className="flex justify-between items-center border-b py-3">
-                            <p>Do you believe Bangladesh is on the right path?</p>
-                            <select className="border p-2 rounded"><option>Yes, I Agree</option><option>No</option></select>
+                        <div key={i} className="flex justify-between items-center border border-gray-300 p-4">
+                            <p className='text-xl bold'>Do you believe Bangladesh is on the right path?</p>
+                            <select className="border p-2 rounded bg-green-100"><option>Yes, I Agree</option><option>No</option></select>
                         </div>
                     ))}
                 </div>
             </section >
+
+
+
+
+
 
             {/* News */}
             < section className="max-w-7xl mx-auto p-6 space-y-6" >
