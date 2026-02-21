@@ -5,6 +5,8 @@ import { motion } from 'framer-motion';
 import hero from "../assets/hero.png";
 import card from "../assets/card-icon.png";
 import quote from "../assets/quote-bg.png";
+import satelite from "../assets/satelite.png";
+import jazeera from "../assets/al-jazeera.png";
 
 const PillarCard = ({ title }) => (
     <motion.div whileHover={{ scale: 1.05 }} className="bg-white p-6 rounded-xl shadow hover:border-l-3 hover:border-r-3 hover:border-green-500 transition-all">
@@ -16,13 +18,14 @@ const PillarCard = ({ title }) => (
 );
 
 const NewsCard = ({ reverse }) => (
-    <div className={`flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} gap-6 bg-white p-6 rounded-xl shadow`}>
-        <img src="https://images.unsplash.com/featured/?earth,space" className="md:w-1/2 rounded-lg" />
+    <div className={`flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} gap-6 bg-white p-6 rounded-2xl shadow hover:border-l-5 hover:border-r-5 hover:border-green-500 `}>
+        <img src={satelite} className=" rounded-2xl bg-cover" />
         <div>
-            <h3 className="font-bold text-lg">Bangladesh Launches New Satellite</h3>
-            <p className="text-sm text-gray-500 my-2">Aljazeera • 05/01/2025</p>
-            <p className="text-sm text-gray-600">Not until the creation and maintenance of decent conditions of life...</p>
-            <button className="mt-3 bg-green-600 text-white px-4 py-2 rounded">Read More</button>
+            <h3 className="text-2xl md:text-3xl font-extrabold mb-2 ">Bangladesh Launches New Satellite</h3>
+            <img src={jazeera} alt="Al Jazeera Logo" className=" h-10" />
+            <p className="text-sm text-gray-500 my-2">Date: 05/01/2025 Time: 10.25 PM</p>
+            <p className="text-sm text-gray-600 my-3">Not until the creation and maintenance of decent conditions of life for all people are recognized and accepted as a common obligation of all people and all countries—not until then shall we, with a certain degree of justification, be able to speak of humankind as civilized</p>
+            <button className="mt-3 font-bold hover:bg-red-500 bg-green-700 text-white px-4 py-2 rounded">Read More</button>
         </div>
     </div>
 );
@@ -141,16 +144,19 @@ export default function App() {
 
 
 
-
-
-
             {/* News */}
-            < section className="max-w-7xl mx-auto p-6 space-y-6" >
-                <h2 className="text-xl font-bold">Recent News</h2>
+            <div className='py-5'>
+                <h2 className="text-2xl md:text-3xl font-extrabold">Recent News</h2>
+                <h2 className=" py-3">Bangladesh 2.0 aims to redefine the nation’s trajectory by embracing cutting-edge technology, promoting inclusive growth, and ensuring sustainability. With initiatives in renewable energy, digital transformation, and robust infrastructure, the country is set to become a global model of development.</h2>
+            </div>
+            < section className="space-y-6" >
                 <NewsCard />
                 <NewsCard reverse />
                 <NewsCard />
             </section >
+
+
+
 
             {/* Donate */}
             < section className="max-w-3xl mx-auto p-6 text-center" >
