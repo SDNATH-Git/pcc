@@ -102,14 +102,14 @@ const Navbar = () => {
                     ) : (
                         <>
                             <NavLink to="/login">
-                                <button className="px-4 py-2 bg-orange-600 text-white rounded hover:bg-orange-700 transition btn">
-                                    Login
+                                <button className="px-4 py-2  border border-green-600 text-green-600 font-extrabold rounded hover:bg-green-700 hover:text-white transition btn">
+                                    Sign In
                                 </button>
                             </NavLink>
                             <NavLink to="/register">
-                                <button className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition btn">
-                                    Register
-                                </button>
+                                {/* <button className="px-4 py-2  border border-green-600 text-green-600 font-extrabold rounded hover:bg-green-700 hover:text-white transition btn">
+                                    Sign Up
+                                </button> */}
                             </NavLink>
                         </>
                     )}
@@ -158,14 +158,15 @@ const Navbar = () => {
                         ) : (
                             <>
                                 <NavLink to="/login" onClick={() => setIsMenuOpen(false)}>
-                                    <button className="w-full py-2 bg-orange-600 rounded hover:bg-orange-700 text-white transition btn">
-                                        Login
+                                    <button className="px-4 py-2  w-full border border-green-600 text-green-600 font-extrabold rounded hover:bg-green-700 hover:text-white transition btn">
+                                        Sign In
                                     </button>
+
                                 </NavLink>
                                 <NavLink to="/register" onClick={() => setIsMenuOpen(false)}>
-                                    <button className="w-full py-2 bg-green-600 text-white rounded hover:bg-green-700 transition btn">
+                                    {/* <button className="w-full py-2 bg-green-600 text-white rounded hover:bg-green-700 transition btn">
                                         Register
-                                    </button>
+                                    </button> */}
                                 </NavLink>
                             </>
                         )}
