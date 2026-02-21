@@ -157,17 +157,22 @@ export default function App() {
 
 
 
-
             {/* Donate */}
-            < section className="max-w-3xl mx-auto p-6 text-center" >
-                <h2 className="text-xl font-bold mb-4">Donate Today</h2>
+            < section className="p-0 md:p-16 text-center my-10" >
+                <h2 className="text-2xl md:text-3xl font-extrabold mb-4">Donate Today</h2>
+                <h2 className="text-gray-600  mb-4">Bangladesh 2.0 aims to redefine the nation’s trajectory by embracing cutting-edge technology, promoting inclusive growth, and ensuring sustainability. With initiatives in renewable energy, digital transformation, and robust infrastructure.</h2>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
                     {[100, 200, 500, 1000].map(a => (
-                        <button key={a} className="border rounded py-3 hover:bg-green-100">{a} Taka</button>
+                        <button key={a} className="bg-white border border-gray-300 rounded-xl shadow-xs text-2xl lg:text-3xl md:text-2xl font-extrabold py-6 hover:bg-green-100 ">{a} Taka</button>
                     ))}
                 </div>
-                <button className="bg-green-700 text-white px-6 py-3 rounded">Donate Now</button>
+                <div className='bg-white border border-gray-300 rounded-xl shadow-xs p-3 mb-3'>
+                    <h1 className="text-gray-500 text-center">Others Amount (Taka)</h1>
+                </div>
+                <button className="bg-green-800 text-white px-6 py-3 rounded shadow-xs hover:bg-red-500 my-3">Donate Now</button>
             </section >
+
+
 
             {/* Subscribe */}
             < section className="bg-green-100 p-8 text-center" >
