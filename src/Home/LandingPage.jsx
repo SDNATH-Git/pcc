@@ -4,6 +4,7 @@
 import { motion } from 'framer-motion';
 import hero from "../assets/hero.png";
 import card from "../assets/card-icon.png";
+import quote from "../assets/quote-bg.png";
 
 const PillarCard = ({ title }) => (
     <motion.div whileHover={{ scale: 1.05 }} className="bg-white p-6 rounded-xl shadow hover:border-l-3 hover:border-r-3 hover:border-green-500 transition-all">
@@ -34,9 +35,9 @@ export default function App() {
                 <div className=" mx-auto grid md:grid-cols-2 gap-8 items-center">
                     <div>
                         <h1 className="text-xs md:text-xl font-mono text-gray-400 mb-2">Bangladesh 2.0</h1>
-                        <h1 className="text-xl md:text-2xl lg:text-4xl font-extrabold">Idea, innovation, </h1>
-                        <h1 className="text-xl md:text-2xl lg:text-4xl font-extrabold"> vision and challenges in </h1>
-                        <h1 className="text-xl md:text-2xl lg:text-4xl font-extrabold"> New Bangladesh.</h1>
+                        <h1 className="text-2xl md:text-2xl lg:text-4xl font-extrabold">Idea, innovation, </h1>
+                        <h1 className="text-2xl md:text-2xl lg:text-4xl font-extrabold"> vision and challenges in </h1>
+                        <h1 className="text-2xl md:text-2xl lg:text-4xl font-extrabold"> New Bangladesh.</h1>
                         <button className="mt-6 bg-green-700 text-white px-5 py-3 rounded-xl font-medium hover:bg-red-500">Explore New Bangladesh</button>
                     </div>
 
@@ -67,7 +68,7 @@ export default function App() {
 
             {/* <!-- section The Vision of Future --> */}
             <section className='py-6'>
-                <h1 className='text-3xl font-extrabold py-2'>The Vision of Future</h1>
+                <h1 className='text-2xl md:text-3xl font-extrabold py-2'>The Vision of Future</h1>
                 <p class="font-normal pb-3">Bangladesh 2.0 aims to redefine the nation’s trajectory by embracing cutting-edge
                     technology, promoting inclusive growth, and ensuring sustainability. With initiatives in renewable energy digital transformation, and robus infrastructure, the country is set to become a global model of development.</p>
 
@@ -98,6 +99,26 @@ export default function App() {
 
             </section>
 
+
+            {/* <!-- section Dr. Muhammad Yunus --> */}
+            <div className='bg-white rounded-2xl p-6 my-8 relative border border-gray-200 shadow-xs hover:border-t-6 hover:border-green-500  '>
+                <img className='absolute' src={quote} alt="Quote Background" />
+
+                <p className='font-medium mt-4 '>Muhammad Yunus[a] (born 28 June 1940) is a Bangladeshi economist, entrepreneur,
+                    politician, and civil society leader,
+                    who has been serving as Chief Adviser of the Interim Government of Bangladesh since 8 August 2024.[1]
+                    Yunus was awarded
+                    the Nobel Peace Prize in 2006 for founding the Grameen Bank and pioneering the concepts of microcredit
+                    and
+                    microfinance.[2] Yunus has received several other national and international honors, including the
+                    United States
+                    Presidential Medal of Freedom in 2009 and the Congressional Gold Medal in 2010.[3] Yunus is one of only
+                    seven people in
+                    the world to have received all of these awards.</p>
+                <h3 className='text-2xl font-bold mt-3' >Dr. Muhammad Yunus</h3>
+                <p className='font-medium '>Chief Adviser of the People's Republic of Bangladesh</p>
+
+            </div>
 
 
 
