@@ -1,68 +1,28 @@
+import { div } from 'framer-motion/client';
 import React from 'react';
-import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
-import Logo from "../assets/Logo.png";
+import facebook from "../assets/facebook.png";
+import x from "../assets/x.png";
+import instagram from "../assets/instagram.png";
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-900 text-base-content  p-6 shadow-inner text-white">
-            <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className=''>
+            <div className='bg-white p-8 border-t border-gray-300 shadow '>
+                <h1 className='text-2xl md:text-3xl font-extrabold text-center'>Bangladesh 2.0</h1>
+                <h1 className='border-t border-gray-300 mx-10 md:mx-40 my-3 '></h1>
 
-                {/* App Info */}
-                <div>
-                    <div className="flex items-center ">
-                        <img className="w-14 " src={Logo} alt="Logo" />
-                        <h1 className="text-xl mt-2.5 font-bold "><span className="text-green-600">Food</span> <span className="text-orange-600">Sharing</span></h1>
-                    </div>
-                    <p>Your one-stop shop for all modern web and mobile apps.</p>
+                <div className='flex gap-2 justify-center items-center'>
+                    <img src={facebook} alt="" />
+                    <img src={instagram} alt="" />
+                    <img src={x} alt="" />
+
+
                 </div>
 
-                {/* Useful Links */}
-                <div className='mt-8'>
-                    <h3 className="text-lg font-semibold mb-2">Links</h3>
-                    <ul className="space-y-1">
-                        <li>
-                            <a href="https://appstore.com/terms-of-service" target="_blank" rel="noopener noreferrer" className="hover:underline">
-                                Terms of Service
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://appstore.com/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:underline">
-                                Privacy Policy
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://stackoverflow.com/questions/56939805/how-to-change-developer-website-in-app-store" target="_blank" rel="noopener noreferrer" className="hover:underline">
-                                Developer Resources
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-
-                {/* Contact Info (Optional) */}
-                <div className='mt-8'>
-                    <h3 className="text-lg font-semibold mb-2">Contact</h3>
-                    <p>Email: support@appstore.com</p>
-                    <p>Phone: +123-456-7890</p>
-                </div>
-
-                {/* Social Media */}
-                <div className='mt-8'>
-                    <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
-                    <div className="flex gap-4 text-2xl">
-                        <a href="https://facebook.com" aria-label="Facebook"><FaFacebook /></a>
-                        <a href="https://twitter.com" aria-label="Twitter"><FaTwitter /></a>
-                        <a href="https://github.com" aria-label="GitHub"><FaGithub /></a>
-                        <a href="https://linkedin.com" aria-label="LinkedIn"><FaLinkedin /></a>
-                    </div>
-                </div>
             </div>
-
-            <div className="text-center mt-6 text-sm opacity-70">
-                © {new Date().getFullYear()} App Store. All rights reserved.
-            </div>
-        </footer>
+        </div>
     );
 };
 
 export default Footer;
+

@@ -175,21 +175,21 @@ export default function App() {
 
 
             {/* Subscribe */}
-            < section className="bg-green-100 rounded-2xl shadow-xs border border-gray-300 p-8 text-center" >
-                <h2 className="text-2xl md:text-3xl font-extrabold mb-2">Subscribe Newsletter</h2>
-                <h2 className=" text-gray-500 px-0 md:px-10 lg:px-44 mb-2">Bangladesh 2.0 aims to redefine the nation’s trajectory by embracing cutting-edge technology, promoting inclusive growth.</h2>
-                <div className="flex  justify-center max-w-md mx-auto my-4">
-                    <input className="p-2 rounded-l bg-white shadow-xs w-full" placeholder="Enter your email" />
-                    <button className="bg-green-800 text-white font-bold px-4 py-2 rounded-r">Subscribe</button>
-                </div>
-                <h1 className='text-center text-gray-500 '>We promise not to spam you!</h1>
-            </section >
+            <div className='pb-10 md:pb-18 bg-gray-50'>
+                < section className="bg-green-100 rounded-2xl shadow-xs border border-gray-300 p-8 text-center " >
+                    <h2 className="text-2xl md:text-3xl font-extrabold mb-2">Subscribe Newsletter</h2>
+                    <h2 className=" text-gray-500 px-0 md:px-10 lg:px-44 mb-2">Bangladesh 2.0 aims to redefine the nation’s trajectory by embracing cutting-edge technology, promoting inclusive growth.</h2>
+                    <div className="flex  justify-center max-w-md mx-auto my-4">
+                        <input className="p-2 rounded-l bg-white shadow-xs w-full" placeholder="Enter your email" />
+                        <button className="bg-green-800 text-white font-bold px-4 py-2 rounded-r">Subscribe</button>
+                    </div>
+                    <h1 className='text-center text-gray-500 '>We promise not to spam you!</h1>
+                </section>
+            </div>
 
 
 
 
-            {/* Footer */}
-            < footer className="text-center p-4 text-gray-500" >© Bangladesh 2.0</footer >
         </div >
     );
 }
