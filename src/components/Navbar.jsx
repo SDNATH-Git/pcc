@@ -42,22 +42,7 @@ const Navbar = () => {
         { name: "My Recipes", path: "/my-recipes" },
     ];
 
-    // const renderNavLinks = (onClickClose = null) =>
-    //     navLinks.map((link) => (
-    //         <NavLink
-    //             key={link.name}
-    //             to={link.path}
-    //             onClick={() => onClickClose?.()}
-    //             className={({ isActive }) =>
-    //                 `relative transition hover:text-green-600 ${isActive
-    //                     ? "text-green-600 font-semibold underline"
-    //                     : ""
-    //                 }`
-    //             }
-    //         >
-    //             {link.name}
-    //         </NavLink>
-    //     ));
+
 
     const renderNavLinks = (onClickClose = null) =>
         navLinks.map((link) => (
@@ -79,14 +64,13 @@ const Navbar = () => {
 
     return (
         <header
-            className={`bg-white text-gray-800 sticky top-0 z-50 transition-all duration-300 border-b-4 border-transparent ${isSticky ? "border-orange-500 shadow-lg" : ""
+            className={`bg-gray-50 text-gray-800 sticky top-0 z-50 transition-all duration-300 border-b-4 border-transparent ${isSticky ? "border-orange-500 shadow-lg" : ""
                 }`}
         >
-            <div className="container mx-auto px-4  flex items-center justify-between">
+            <div className="container mx-auto py-3 px-5 md:px-14  flex items-center justify-between ">
                 {/* Logo */}
                 <div className="flex items-center ">
-                    <img className="w-14 " src={Logo} alt="Logo" />
-                    <h1 className="text-xl mt-2.5 font-bold "><span className="text-green-600">Food</span> <span className="text-orange-600">Sharing</span></h1>
+                    <h1 className="text-3xl font-extrabold">Bangladesh 2.0</h1>
                 </div>
 
                 {/* Desktop Nav */}

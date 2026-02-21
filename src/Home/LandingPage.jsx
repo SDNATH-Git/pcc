@@ -32,9 +32,9 @@ const NewsCard = ({ reverse }) => (
 
 export default function App() {
     return (
-        <div className="font-sans">
+        <div className="font-sans pt-5">
             {/* Hero */}
-            <section className="bg-green-100 p-6 md:p-12 rounded-3xl mt-3">
+            <section className="bg-green-100 p-6 md:p-12 rounded-3xl ">
                 <div className=" mx-auto grid md:grid-cols-2 gap-8 items-center">
                     <div>
                         <h1 className="text-xs md:text-xl font-mono text-gray-400 mb-2">Bangladesh 2.0</h1>
