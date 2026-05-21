@@ -117,7 +117,7 @@ npm run dev
 - 🧑‍💼 Admin Dashboard
 - 📊 Analytics Dashboard
 - 🧠 AI Recommendation System
-- 📱 PWA Support
+- 📱 PWA Support systum
 
 
 ---
