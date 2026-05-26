@@ -8,7 +8,7 @@ This project represents is a digital vision platform for innovation, sustainabil
 
 ## 🚀 Tech Stack
 
-- ⚛️ React.js (Vite)
+- ⚛️ React.js 
 - 🎨 Tailwind CSS
 - 🎞 Framer Motion (Animations)
 - 📱 Fully Responsive (Mobile / Tablet / Desktop)
