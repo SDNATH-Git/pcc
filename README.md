@@ -1,6 +1,6 @@
 # Bangladesh 2.0
 ## Live Link : https://bd71.netlify.app/
-A **modern, fully responsive frontend web application** built with **React.js**, **Tailwind CSS**, and **Framer Motion** inspired by the "Bangladesh 2.0" concept Ideai.
+A **modern, fully responsive frontend web application** built with **React.js**, **Tailwind CSS**, and **Framer Motion** inspired by the "Bangladesh 2.0".
 
 This project represents is a digital vision platform for innovation, sustainability, infrastructure, and empowerment — showcasing a futuristic national transformation UI .
 
