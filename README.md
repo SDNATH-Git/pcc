@@ -27,7 +27,7 @@ This project represents is a digital vision platform for innovation, sustainabil
 - ✅ Newsletter Subscription UI
 - ✅ Smooth Animations
 - ✅ Clean UI/UX
-- ✅ Scalable Component  projects Structure create
+- ✅ Scalable Component Structure 
 
 ---
 
