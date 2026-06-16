@@ -26,7 +26,7 @@ This project represents is a digital vision platform for innovation, sustainabil
 - ✅ Donation Section
 - ✅ Newsletter Subscription UI
 - ✅ Smooth Animations
-- ✅ Clean UI/UX
+- ✅ Clean UI/UX Degin
 - ✅ Scalable Component 
 
 ---
