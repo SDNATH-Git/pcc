@@ -130,7 +130,7 @@ This project is designed as a **scalable enterprise-level digital platform** for
 - Smart governance platforms
 - Innovation ecosystems
 - Public engagement systems
-- Digital service delivery portals system update  19/7/26
+- Digital service delivery system today update  22/7/26
 
 ---
 
